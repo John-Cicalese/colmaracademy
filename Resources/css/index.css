@@ -2,6 +2,13 @@ html {
     font-size: 16px;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+    /*overflow-x: hidden;*/
+    border: 2px solid purple;
+}
+
 
 /*Header*/
 
@@ -48,11 +55,15 @@ nav span {
 
 /*Banner*/
 
-.banner {
+#bannerone {
     background-color: lightgrey;
+}
+
+.banner {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border: 2px solid red;
 }
 
 .banner img {
@@ -78,7 +89,7 @@ nav span {
 .signup-content h2 {
     font-weight: 700;
     font-size: 2rem;
-    margin-top: -15rem;
+    margin-top: -10rem;
     margin-bottom: 2rem;
 }
 
@@ -95,4 +106,20 @@ nav span {
     background-color: black;
     color: white;
     height: 3rem;
+}
+
+
+/*Banner 2*/
+
+.flex {
+    display: flex;
+}
+
+.banner2 img {
+    width: 60%;
+    margin: 2rem 1.5rem;
+}
+
+.campus {
+    margin-top: -30rem;
 }
