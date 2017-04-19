@@ -127,7 +127,7 @@ nav span {
 
 .practice-content h2 {
     font-weight: 500;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     font-size: 1.5rem;
 }
 
@@ -166,14 +166,82 @@ nav span {
 
 .campusinfo-content h4 {
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
 }
 
 .campusinfo-content p {
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
     font-size: .9rem
 }
 
 #guest {
     background-color: lightgrey;
+}
+
+
+/*Banner 3*/
+
+.bannerthree {
+    background-color: lightgrey;
+}
+
+.learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    width: 20rem;
+}
+
+.learningtitle h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.courses {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.course-content {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: Ubuntu;
+    font line-height: 1.5;
+    padding-right: 2.5rem;
+}
+
+.course-content h4 {
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.course-content p {
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    font-weight: 300;
 }
