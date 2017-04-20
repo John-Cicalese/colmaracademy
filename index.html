@@ -151,7 +151,10 @@
             <div class="exhibit">
                 <div class="flex">
                     <div class="flexcolumn">
-                        <video src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/videos/thesis.mp4" autoplay poster="posterimage.jpg"></video>
+                        <video controls="controls" onclick="this.play()">
+                        <source src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/videos/thesis.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
                         <div class="practice-content">
                             <h2>Reimagine urban</h2>
                             <p id="quote">"Curabitur vitae libero in ipsum porttutor consequent. Aliquan et comodo lectus, nec consequat neque. Sed non accusant urna. Phasellus sed conssequat ex. Etiam eget magna laoreet dolor consequent, tristique ligula."</p>
@@ -181,6 +184,17 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                <span>@2016 Colmar Academy. All rights reserved</span>
+            </div>
+            <nav>
+                <span>Terms</span>
+                <span>Privacy</span>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>
