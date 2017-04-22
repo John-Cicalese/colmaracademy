@@ -21,11 +21,10 @@ html {
 }
 
 .logo img {
-    height: 4rem;
+    height: 3rem;
 }
 
 .logo span {
-    font-family: "Open Sans";
     font-size: 1.6rem;
     font-weight: bold;
 }
@@ -54,6 +53,12 @@ nav span {
 }
 
 .banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#banner {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -138,7 +143,7 @@ nav span {
     font-weight: 300;
 }
 
-.mini {
+#banner.mini {
     width: 26.4rem;
     height: 10.5rem;
 }
@@ -173,7 +178,7 @@ nav span {
     font-size: .9rem
 }
 
-#guest {
+.guest {
     background-color: lightgrey;
 }
 
@@ -228,7 +233,7 @@ nav span {
 .course-content {
     margin-left: 1rem;
     margin-bottom: 1.5rem;
-    font line-height: 1.5;
+    line-height: 1.5;
     padding-right: 2.5rem;
 }
 
@@ -272,4 +277,171 @@ footer {
 
 .copyright {
     margin-left: 1.5rem;
+}
+
+
+/*Mobile*/
+
+@media only screen and (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    #desktop-nav {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    #mobile-logo img {
+        height: 2rem;
+    }
+    #mobile-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #mobile-logo {
+        display: flex;
+        margin-left: 1.5rem;
+        align-items: center;
+    }
+    #mobile-nav img, #mobile-nav .fa-desktop {
+        margin-right: 5rem;
+    }
+    #mobile-nav .fa-user {
+        margin-right: 1.5rem;
+    }
+    #bannerone img {
+        display: none;
+    }
+    .mobilebanner1 {
+        background-color: darkgray;
+        width: 100%;
+        height: 11.25rem;
+    }
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .signup {
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .signup-content {
+        width: 100%;
+        line-height: 1.2;
+    }
+    .signup-content h2 {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-right: 3rem;
+    }
+    .signup-content h4 {
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding-right: 5rem;
+    }
+    #desktop-display {
+        display: none;
+    }
+    #bantwoimg {
+        display: none;
+    }
+    #mobbantwoimg {
+        max-width: 95%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .campus {
+        border-left: none;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    #mobile-display {
+        border-bottom: .5px solid lightgrey;
+    }
+    .guest, .bannerthree {
+        background-color: white;
+    }
+    #banner {
+        display: block;
+    }
+    #banner.mini {
+        width: auto;
+        height: 18rem;
+        margin-bottom: 1rem;
+    }
+    .course img {
+        display: none;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+        color: white;
+        height: 3rem;
+    }
+    .mobile-course {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: lightgray;
+        color: #808080;
+        height: 3rem;
+        padding-left: 1rem;
+    }
+    .campusinfo {
+        padding-top: 0;
+    }
+    .course-content p {
+        display: none;
+    }
+    .course-content {
+        margin-bottom: .5rem;
+        margin-right: -3.5rem;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: .5px solid lightgrey;
+    }
+    .flexcolumn video {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .footer nav {
+        display: none;
+    }
+    .footer {
+        display: block;
+        margin-top: 2.5rem;
+        font-size: 1rem;
+        color: grey;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #mobile-nav {
+        display: none;
+    }
+    #mobile-logo {
+        display: none;
+    }
+    .mobilebanner1 {
+        display: none;
+    }
+    #mobbantwoimg {
+        display: none;
+    }
+}
+
+
 }

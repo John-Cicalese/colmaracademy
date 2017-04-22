@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>ColmarAcademy</title>
     <meta name="description" content="DESCRIPTION">
+    <script src="https://use.fontawesome.com/930c403846.js"></script>
     <link rel="stylesheet" type="text/css" href="/Users/John/Documents/colmaracademy/Resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/Users/John/Documents/colmaracademy/Resources/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700" rel="stylesheet">
@@ -21,7 +22,15 @@
             <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/ic-logo.svg" alt="logo">
             <span>COLMAR</span><span id="academy">ACADEMY</span>
         </div>
-        <nav>
+        <div id="mobile-logo">
+            <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/ic-logo.svg" alt="logo">
+        </div>
+        <nav id="mobile-nav">
+            <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/ic-on-campus.svg">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </nav>
+        <nav id="desktop-nav">
             <span>On campus</span>
             <span>Online</span>
             <span>For companies</span>
@@ -29,8 +38,9 @@
         </nav>
     </div>
     <!--Banner 1-->
-    <div class="banner" id="bannerone">
+    <section class="banner" id="bannerone">
         <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/banner.jpg" alt="book reading">
+        <div class="mobilebanner1"></div>
         <div class="signup">
             <div class="signup-content">
                 <h2>Learn something new everyday</h2>
@@ -38,11 +48,11 @@
                 <div class="btn">Start here</div>
             </div>
         </div>
-    </div>
+    </section>
     <!--Banner 2-->
     <section class="bannertwo">
-        <div class="flex">
-            <div class="flexcolumn">
+        <div class="flex" id="mobile-display">
+            <div class="flexcolumn" id="desktop-display">
                 <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/information-main.jpg" alt="reading">
                 <div class="practice-content">
                     <h2>It doesn't hurt to keep practicing</h2>
@@ -51,8 +61,9 @@
                 </div>
             </div>
             <div class="campus">
-                <div class="banner mini">
+                <div class="mini" id="banner">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/information-orientation.jpg" alt="orientation" id="bantwoimg">
+                    <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/information-orientation-mobile.jpg" alt="orientation" id="mobbantwoimg">
                     <div class="campusinfo">
                         <div class="campusinfo-content">
                             <h4>Orientation date</h4>
@@ -61,8 +72,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="banner mini">
+                <div class="mini" id="banner">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/information-campus.jpg" alt="campus" id="bantwoimg">
+                    <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/information-campus-mobile.jpg" alt="campus" id="mobbantwoimg">
                     <div class="campusinfo">
                         <div class="campusinfo-content">
                             <h4>Our campus</h4>
@@ -71,8 +83,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="banner mini" id="guest">
+                <div class="mini guest" id="banner">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/information-guest-lecture.jpg" alt="guest speaker" id="bantwoimg">
+                    <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/information-guest-lecture-mobile.jpg" alt="guest speaker" id="mobbantwoimg">
                     <div class="campusinfo">
                         <div class="campusinfo-content">
                             <h4>Our guest lecture</h4>
@@ -94,7 +107,7 @@
                 <div class="course">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/course-software.jpg" alt="software engineering">
                     <div class="course-content">
-                        <h4>Software engineering</h4>
+                        <h4 class="mobile-course">Software engineering</h4>
                         <p class="courses">COURSES</p>
                         <p>Web Development, Mobile Development, iOT, APIs</p>
                     </div>
@@ -102,7 +115,7 @@
                 <div class="course">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/course-computer-art.jpg" alt="Computer Art">
                     <div class="course-content">
-                        <h4>Computer Art</h4>
+                        <h4 class="mobile-course">Computer Art</h4>
                         <p class="courses">COURSES</p>
                         <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
                     </div>
@@ -110,7 +123,7 @@
                 <div class="course">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/course-design.jpg" alt="Design">
                     <div class="course-content">
-                        <h4>Design</h4>
+                        <h4 class="mobile-course">Design</h4>
                         <p class="courses">COURSES</p>
                         <p>User Ecperience Design, User Research, Visual Design</p>
                     </div>
@@ -118,7 +131,7 @@
                 <div class="course">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/course-data.jpg" alt="Data">
                     <div class="course-content">
-                        <h4>Data</h4>
+                        <h4 class="mobile-course">Data</h4>
                         <p class="courses">COURSES</p>
                         <p>Data Science, Big Data, SQL, Data Visualization</p>
                     </div>
@@ -126,7 +139,7 @@
                 <div class="course">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/course-business.jpg" alt="Business">
                     <div class="course-content">
-                        <h4>Business</h4>
+                        <h4 class="mobile-course">Business</h4>
                         <p class="courses">COURSES</p>
                         <p>Product Development, Business Development, Startup</p>
                     </div>
@@ -134,7 +147,7 @@
                 <div class="course">
                     <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/course-marketing.jpg" alt="Marketing">
                     <div class="course-content">
-                        <h4>Marketing</h4>
+                        <h4 class="mobile-course">Marketing</h4>
                         <p class="courses">COURSES</p>
                         <p>Analytics, Content Marketing, Mobile Marketing</p>
                     </div>
@@ -155,12 +168,12 @@
                         <source src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/videos/thesis.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                         </video>
-                        <div class="practice-content">
+                        <div class="practice-content" id="desktop-display">
                             <h2>Reimagine urban</h2>
                             <p id="quote">"Curabitur vitae libero in ipsum porttutor consequent. Aliquan et comodo lectus, nec consequat neque. Sed non accusant urna. Phasellus sed conssequat ex. Etiam eget magna laoreet dolor consequent, tristique ligula."</p>
                         </div>
                     </div>
-                    <div class="showcase">
+                    <div class="showcase" id="desktop-display">
                         <div class="banner mini" id="guest">
                             <img src="/Users/John/Documents/colmaracademy/Resources/capstone_colmar_assets/images/thesis-fisma.jpg" alt="prototype" id="bantwoimg">
                             <div class="campusinfo">
