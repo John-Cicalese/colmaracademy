@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 
 /*Header*/
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,7 +72,7 @@ nav span {
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 1.5rem;
-  width: 60%;
+  width: 63%;
   display: block;
 }
 
@@ -113,13 +113,14 @@ nav span {
 .flexcolumn {
   display: flex;
   flex-direction: column;
+  margin-right: 1rem;
 }
 
 .flexcolumn img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 2rem 1.5rem;
+  margin: 2rem .5rem 2rem 1.5rem;
 }
 
 .practice-content {
@@ -415,7 +416,7 @@ footer {
     border-bottom: .5px solid lightgrey;
   }
   .flexcolumn video {
-    width: 100%;
+    width: 105%;
     height: auto;
     margin: 0 auto;
   }
